@@ -1,17 +1,11 @@
-import { Row } from "react-bootstrap";
-import { SiteStructure } from "../data/FetchData";
-import { FooterLinks } from "./Footer/FooterLinks";
 import MainNav from "./header/Mainbar/MainNav/MainNav";
-import STRUCTURE from '../data/data.json';
-import { mainMenu } from "../data/MainMenu";
 
-    export default function Layout({children}:{children:React.ReactNode}) {
-        const SiteLayout = SiteStructure();
+    export default function Layout({children}) {
 
     return(
     <>
           <header >
-            <MainNav Nav={mainMenu} ></MainNav>
+            <MainNav></MainNav>
           </header>
           <body>
     {children}

@@ -1,24 +1,10 @@
-import { FaBook, FaFileAlt, FaGraduationCap, FaHome, FaInfo, FaInfoCircle, FaQuestion, FaQuestionCircle, FaRegChartBar, FaSchool, FaStackExchange } from "react-icons/fa";
-import { SiteStructure } from "./data/FetchData.tsx";
-import WelcomeBlock from "./components/blocks/welcomeblock/WelcomeBlock.tsx";
-import { TutorialBlock } from "./components/tutorial/TutorialBlock.tsx";
+import { FaFileAlt, FaGraduationCap, FaHome, FaInfoCircle, FaSchool } from "react-icons/fa";
+import { SiteStructure } from "./data/FetchData";
+import WelcomeBlock from "./components/blocks/welcomeblock/WelcomeBlock";
+import { TutorialBlock } from "./components/tutorial/TutorialBlock";
 import {BsGraphUp} from "react-icons/bs";
-import BlankBlock from "./components/blocks/blank/blankBlock.tsx";
-
+import BlankBlock from "./components/blocks/blank/blankBlock";
 const Structure = SiteStructure();
-import React from 'react'
-
-export  function AllComp() {
-  return (
-<>
-<div className={"flex flex-col"}>
-  <div className={"flex flex-row w-100"}><WelcomeBlock block={Structure.blocks.welcome}></WelcomeBlock></div>
-  <div className={"flex flex-row w-100"}><TutorialBlock block={Structure.blocks.tutorials}/>E</div>
-  
-  </div>
-</>  )
-}
-
 export const pages = {
   WelcomeBlock: {
     component:<><WelcomeBlock block={Structure.blocks.welcome}></WelcomeBlock>  </>,

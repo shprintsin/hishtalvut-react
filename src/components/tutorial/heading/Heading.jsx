@@ -1,7 +1,15 @@
 import { FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import styles from './Heading.module.css'
-export function Heading({ name,icon,uri }: { name: string,count:number,icon:string,uri:string }) {
+import PropTypes from 'prop-types';
+
+Heading.propTypes = {
+  name: PropTypes.string.isRequired,
+  icon: PropTypes.string.isRequired,
+  uri: PropTypes.string.isRequired,
+};
+
+export function Heading({ name,icon,uri }) {
   return (
     <>
        <Link to={uri} className={styles.wrapper}>

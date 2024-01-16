@@ -1,4 +1,4 @@
-export function convertArray(nodes:any[]) {
+export function convertArray(nodes) {
     // Filter out the parent nodes
     const parents = nodes.filter(node => node.childItems.nodes.length > 0);
 

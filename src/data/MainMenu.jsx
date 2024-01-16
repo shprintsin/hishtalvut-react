@@ -1,6 +1,5 @@
-import React from 'react'
 
-export const mainMenu = [
+export const MainMenuData = [
     {
       "uri": "/library",
       "label": "ספריה"

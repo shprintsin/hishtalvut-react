@@ -1,5 +1,3 @@
-import { SITE_LAYOUT } from '../components/Globals';
-import INFODATA from './infodata.json'
 import STRUCTURE from './data.json';
 import { convertArray } from '../utils/convertArrayLink';
 

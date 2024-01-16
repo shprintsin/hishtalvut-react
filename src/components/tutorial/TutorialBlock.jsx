@@ -1,8 +1,8 @@
 import TutorialCard from "./TutorialCard";
 import styles from "./Card.module.css"
 import { FaGraduationCap } from "react-icons/fa";
-export function TutorialBlock({ block }) {
-  const { title, content } = block;
+export function TutorialBlock( props) {
+  const { content } = props.block;
   return (
     <>
    <div className={styles.container}>

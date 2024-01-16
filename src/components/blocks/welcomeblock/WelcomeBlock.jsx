@@ -1,17 +1,8 @@
 import { FaEnvelope, FaHeart, FaInfo } from 'react-icons/fa'
 import styles from './WelcomeBlock.module.css'
 import { WelcomePage } from '../../../data/welcomeBlock'
-import { TutorialBlock } from '../../tutorial/TutorialBlock'
 
-interface WelcomeBlockProps {
-  block: {
-    title: string,
-    content: string
-  }
-}
-
-export default function WelcomeBlock({ block }: WelcomeBlockProps) {
-  const { title, content } = block
+export default function WelcomeBlock() {
   return (
     <>
     <div className={styles.container}>

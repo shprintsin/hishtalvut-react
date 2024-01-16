@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 // Post list, includes the list op post in a category and the icon
-const GetTutorialPosts = ({ articles, count, uri}: TutorialProps) => {
+const GetTutorialPosts = ({ articles, uri}) => {
     return (
       <div>
         <ul className={"custom-bullet"}>

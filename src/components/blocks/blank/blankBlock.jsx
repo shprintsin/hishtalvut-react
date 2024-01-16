@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './bankBlock.module.css'
 import { FaGraduationCap } from 'react-icons/fa'
 import SurveyPage from '../../surveyjs/SurveyPage'
