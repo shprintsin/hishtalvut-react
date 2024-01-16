@@ -1,0 +1,91 @@
+.Container {
+margin: 0;
+padding: 0;
+width: 100%;
+display: flex;
+/* position: absolute; */
+background-color: var(--prime);
+height: 100px;
+justify-content: center;
+/* border-bottom: 2px solid white; */
+}
+
+.search {
+    display: flex;
+    flex-basis: 14%;
+gap: 10px;
+}
+
+.login {
+    display: flex;
+color: white;
+
+display: flex;
+align-items: center;
+text-decoration: none;
+color: white;
+transition: background-color 300ms ease-in-out;
+font-size: 1.125rem;
+font-weight: 500;
+justify-content: flex-end;
+
+}
+.login span {
+    padding: 5px;
+}
+.icon {
+
+    color: white;
+}
+.social {
+    
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:var(--prime);
+    border-bottom: 2px solid white;
+    
+}
+.logo {
+    display: flex;
+flex-basis: 18%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-left: 1px solid white;
+    /* border:2px black solid; */
+    margin: 0;
+    height: 90px;
+    background: var(--deepblue);
+    justify-content: center;
+}
+.menu {
+padding-right: 110px;
+    display: flex;
+    justify-content: center;
+    flex-basis: 60%;
+    justify-items: center;
+}
+.menu a {
+    color:#23567d;
+    font-size:20px;
+    font-weight:400;
+    text-decoration: none;
+    padding: 10px;  
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navigation {
+        flex-direction: column;
+    }
+
+    .navigation > .menu, .navigation > .search {
+        flex-basis: 100%;
+        margin-top: 10px;
+    }
+}
