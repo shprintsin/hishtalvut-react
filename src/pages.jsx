@@ -4,6 +4,8 @@ import WelcomeBlock from "./components/blocks/welcomeblock/WelcomeBlock";
 import { TutorialBlock } from "./components/tutorial/TutorialBlock";
 import {BsGraphUp} from "react-icons/bs";
 import BlankBlock from "./components/blocks/blank/blankBlock";
+import AboutBlock from "./components/blocks/about/AboutBlock";
+import ChartBlock from "./components/blocks/infodata/infoContainer";
 const Structure = SiteStructure();
 export const pages = {
   WelcomeBlock: {
@@ -32,10 +34,10 @@ Volenteer:{
   path: "/tutorials",
 },
 Volenteer_2:{
-  component: <TutorialBlock block={Structure.blocks.tutorials}/>,
+  component: <ChartBlock/>,
   label: "לוח נתונים",
   icon: <BsGraphUp />,
-  path: "/tutorials",
+  path: "/info",
 },
 // Volenteer_3:{
 //   component: <TutorialBlock block={Structure.blocks.tutorials}/>,
@@ -44,10 +46,10 @@ Volenteer_2:{
 //   path: "/tutorials",
 // },
 page5:{
-  component: <TutorialBlock block={Structure.blocks.tutorials}/>,
+  component: <AboutBlock/>,
   label: "קצת עלינו",
   icon: <FaInfoCircle />,
-  path: "/tutorials",
+  path: "/about",
 },
 page6:{
   component: <BlankBlock/>,

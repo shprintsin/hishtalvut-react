@@ -1,5 +1,5 @@
 .container {
-    height: 100vh;
+    min-height: 100vh;
     padding: 2.25rem 3.25rem 2.25rem 2.25rem;
     margin: 0;
     width: 100%;
@@ -28,6 +28,6 @@
     padding-top: 2.25rem;
     padding-right: 1rem;
     display: flex;
-    height: 100%;
+    /* height: 100%; */
     /* background-color: white; */
 }

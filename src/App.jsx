@@ -3,24 +3,22 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
 import './assets/styles/globals.css'
 import SideBar from './layout/sidebar/SideBar';
-import styles from "./layout/block/block.module.css";
+// import styles from "./layout/block/block.module.css";
 import { pages } from './pages';
+
 function App() {
   return (
     <>
-    <BrowserRouter>
-        <Layout>
-        <div className={styles.container}>
-    <div className={styles.sidebar}><SideBar/></div>
-     <div className={styles.Blocks}>
+{/* <Layout> </Layout> */}
+  <BrowserRouter>
      <Routes>
-      {Object.values(pages).map(({ component, path ,index}) => <Route path={path} key={index} element={component} />)}
+     <Route path={"/layout"} element={<Layout><>center</></Layout>} />
+      {Object.values(pages).map(({ component, path ,index}) => <Route path={path} key={index} element={<Layout>{component}</Layout>} />)}
     </Routes>
-      </div>
-    </div>
 
-        </Layout>
       </BrowserRouter>
+
+
     </>
   )
 }
