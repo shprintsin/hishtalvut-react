@@ -2,8 +2,9 @@ a {text-decoration: none;}
 .wrapper {
     color: white; /* equivalent to text-white in Tailwind */
     font-size: 1.125rem; /* equivalent to text-lg in Tailwind */
-    padding: 0.75rem; /* equivalent to p-3 in Tailwind */
-    background-color: #5b7895; 
+    padding: 0.75rem; 
+    
+    background-color: #3e4a62; 
     display: flex;
     justify-content: space-between;
 }

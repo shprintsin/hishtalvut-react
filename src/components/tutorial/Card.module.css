@@ -1,6 +1,6 @@
 .container {
     min-height:100vh;
-    padding: 1.25rem;
+    padding: 2.25rem;
     margin: 0;
     width: 100%;
     display: flex;
@@ -26,7 +26,9 @@
 }
 
 .content {
-    padding-top: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
     display: flex;
     min-height:20rem ;
     background-color: white;
@@ -35,7 +37,7 @@
 .Card {
     height: auto;
     background-color: #e5e7eb; /* equivalent to bg-gray-300 in Tailwind */
-    width: 41.666667%; /* equivalent to w-5/12 in Tailwind */
+    width: 45%; /* equivalent to w-5/12 in Tailwind */
     align-items: stretch;
-    margin: 0 2.5rem; /* equivalent to mx-10 in Tailwind */
+    /* margin: 0 2.5rem;  */
 }

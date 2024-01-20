@@ -17,7 +17,7 @@ export function Heading({ name,icon,uri }) {
         <span className={styles.icon}><i className={icon}></i></span>
     <a className={styles.Link} href={"/"}>
       <span className={"text-xs mx-2"}><FaBars/></span>
-      <span className="mx-2 w-fit">guide 46</span>
+      <span className="mx-2 w-fit">5 מאמרים</span>
     </a>
       </Link>
 
